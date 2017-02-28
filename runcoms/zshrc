@@ -10,6 +10,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Homebrew
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+
 # Customize to your needs..
 alias p='popd'
 alias -g H='| head'
@@ -22,5 +29,13 @@ alias ff='find . -type f -name'
 alias h='history'
 
 alias rm='rm -i'
-alias cp='cp -i'
+alias cp='rsync -ah --progress'
 alias mv='mv -i'
+
+#apt
+alias apts='apt-cache search'
+alias aptsow='apt-cache show'
+alias apti='sudo apt-get install -V'
+alias aptu='sudo apt-get update'
+alias aptrm='sudo apt-get remove'
+alias aptpurge='sudo apt-get remove --purge'
