@@ -10,4 +10,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Customize to your needs..
+alias p='popd'
+alias -g H='| head'
+alias -g T='| tail'
+alias -g G='| grep'
+alias -g L="| less"
+alias fd='find . -type d -name'
+alias ff='find . -type f -name'
+
+alias h='history'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
