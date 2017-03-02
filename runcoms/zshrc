@@ -19,6 +19,10 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 
+# Anaconda
+export PATH="$HOME/anaconda2/bin:$PATH"
+
+
 # Customize to your needs..
 alias p='popd'
 alias -g H='| head'
