@@ -20,7 +20,7 @@ if [[ -z "$STY" && -z "$EMACS" && -z "$VIM" ]] && ( \
   ( [[ -z "$SSH_TTY" ]] && zstyle -t ':prezto:module:screen:auto-start' local ) \
 ); then
   session="$(
-    screen -wipe -list 2> /dev/null \
+    screen -wipe >/dev/null 2>&1 && screen -list 2> /dev/null \
       | sed '1d;$d' \
       | awk '{print $1}' \
       | head -1)"
