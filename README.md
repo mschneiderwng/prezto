@@ -8,7 +8,7 @@ and prompt themes.
 Installation
 ------------
 
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/mschneiderwng/prezto/master/install)"  
+`zsh -c "$(curl -fsSL https://raw.githubusercontent.com/mschneiderwng/prezto/master/install)"`
 
 
 License
