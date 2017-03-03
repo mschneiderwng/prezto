@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vim'
+export VISUAL='vim'
 export PAGER='less'
 
 #
@@ -72,3 +72,12 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+# the maximum number of events stored in the internal history list.
+HISTSIZE=100000
+# The maximum number of history events to save in the history file
+SAVEHIST=1000
+# maximum size of the directory stack
+DIRSTACKSIZE=50
+# don't ask me 'do you wish to see all XX possibilities' before menu selection
+LISTPROMPT=''
