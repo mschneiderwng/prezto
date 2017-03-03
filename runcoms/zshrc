@@ -15,6 +15,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/zlocal.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/zlocal.zsh"
 fi
 
+# ZSH options
+unsetopt correct
+
+
 export TERM="xterm-256color"
 
 # Homebrew
@@ -38,7 +42,8 @@ alias ff='find . -type f -name'
 
 alias h='history'
 
-alias rm='rm -i'
+unalias rm cp mv
+alias rm='rm -I'
 alias cp='rsync -ah --progress'
 alias mv='mv -i'
 
