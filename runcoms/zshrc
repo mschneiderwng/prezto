@@ -17,9 +17,10 @@ fi
 
 # ZSH options
 unsetopt correct
-
-
 export TERM="xterm-256color"
+
+# PATH
+export PATH="$HOME/bin:$PATH"
 
 # Homebrew
 export PATH="$HOME/.linuxbrew/bin:$PATH"
