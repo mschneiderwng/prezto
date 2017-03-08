@@ -50,7 +50,7 @@ alias mv='mv -i'
 
 #apt
 alias apts='apt-cache search'
-alias aptsow='apt-cache show'
+alias aptshow='apt-cache show'
 alias apti='sudo apt-get install -V'
 alias aptu='sudo apt-get update'
 alias aptrm='sudo apt-get remove'
