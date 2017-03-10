@@ -32,6 +32,14 @@ export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 # Anaconda
 export PATH="$HOME/anaconda2/bin:$PATH"
 
+# Go
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
+
+# NIX
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi 
+
+
 # Customize to your needs..
 alias p='popd'
 alias -g H='| head'
@@ -47,6 +55,7 @@ unalias rm cp mv
 alias rm='rm -I'
 alias cp='rsync -ah --progress'
 alias mv='mv -i'
+alias wget='wget -c'
 
 #apt
 alias apts='apt-cache search'
