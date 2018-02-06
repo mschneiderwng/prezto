@@ -36,11 +36,14 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 
 # Anaconda
-export PATH="$HOME/anaconda2/bin:$PATH"
+export PATH="$HOME/anaconda3/bin:$PATH"
 
 # Go
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
+
+# Rust
+export PATH=$PATH:$HOME/.cargo/bin
 
 # NIX
 if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then 
