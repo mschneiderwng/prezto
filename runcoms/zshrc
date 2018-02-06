@@ -63,7 +63,6 @@ alias ff='find . -type f -name'
 alias h='history'
 
 unalias rm cp mv
-alias rm='rm -I'
 alias cp='rsync -ah --progress'
 alias mv='mv -i'
 alias wget='wget -c'
